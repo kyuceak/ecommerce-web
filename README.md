@@ -1,55 +1,66 @@
 # ecommerce-web
 Ecommerce website application
 
+# Ecommerce Website Project
 
-# Online Store Project
+## Overview
+This project is an online store application developed as a course project. It provides an interactive platform where users can browse various categories of products, add them to a shopping cart, and complete purchases. The backend of the application handles inventory management and order tracking.
 
-## Project Description
-This repository contains an online store application, designed as a course project. The application serves as a platform for users to browse products, add them to their cart, and complete purchases. The store's inventory is managed by product managers and sales are overseen by sales managers.
+The application is developed using Django for the backend and Next.js for the frontend.
 
-## Features
-- Browse products by categories
-- Shopping cart functionality
-- User login and authentication
-- Order tracking from processing to delivery
-- Product rating and commenting (comments are approved by product managers)
-- Search and sort products by name, description, price, and popularity
-- Admin interface for managing the store
-- User roles include customers, sales managers, and product managers
+## Detailed Features
+1. **Product Browsing**: The application displays products categorized into various groups. Users can select and add products to the shopping cart for purchasing.
+2. **Shopping Cart**: Users can add their desired products to the shopping cart and proceed to checkout for purchasing.
+3. **Order Tracking**: The system handles order processing from the moment a user places an order to the point the order is delivered. The status of the order is updated at every step and can be viewed by the user.
+4. **User Authentication**: Users can browse products and add them to the shopping cart without logging in. However, they are required to log in before placing an order and making a payment.
+5. **Product Rating and Review**: Users can leave reviews and give ratings to the products. The review is published after approval by a product manager.
+6. **Search and Sort**: Users can search products based on their names or descriptions. They can also sort products based on their price or popularity.
+7. **Admin Interface**: The application provides an admin interface for performing managerial tasks.
 
-## Technology Stack
-- Front-end: Next.js
-- Back-end: Django
+## Tech Stack
+- Backend: Django
+- Frontend: Next.js
 
-## Setup
-
-### Requirements
+## Getting Started
+### Prerequisites
 - Python 3.8 or higher
 - Node.js 12.0 or higher
 
-### Installation
-1. Clone this repository
+### Setup and Installation
+1. Clone the repository to your local machine
+
+
    ```bash
-   git clone https://github.com/yourusername/onlinestoreproject.git
    
-2. Install the dependencies. For the Django backend:
-   pip install -r requirements.txt
+   git clone https://github.com/kyuceak/ecommerce-web.git
 
-   And for the Next.js:
-   cd frontend
-   npm install
+2.Navigate into the project directory and install the backend dependencies:
 
-3. Run the Django backend:
-   python manage.py runserver
 
-4.Run the Next.js frontend:
+  cd backend
+  
+  pip install -r requirements.txt
+
+3.Navigate into the frontend directory and install the frontend dependencies:
+
+
   cd frontend
+  
+  npm install
+  
+4.Run the backend server:
+
+
+  python manage.py runserver
+  
+5.In a new terminal, run the frontend server:
+
+
+  cd frontend
+  
   npm run dev
 
-###Usage
+You can now visit localhost:3000 in your web browser to view the application.
 
-Visit localhost:3000 in your web browser to access the store
-
-###Security
-This project includes measures to protect sensitive data such as user passwords and credit card information. However, credit card verification and limit issues are beyond the scope of this project.
-
+### Security
+This project implements security measures for handling sensitive data such as user passwords, credit card information, and user accounts. Encryption is employed to protect this data. However credit card card verification and limitation is beyond the scope of this project.
