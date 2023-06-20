@@ -1,6 +1,3 @@
-# ecommerce-web
-Ecommerce website application
-
 # Ecommerce Website Project
 
 ## Overview
