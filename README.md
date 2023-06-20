@@ -62,5 +62,5 @@ The application is developed using Django for the backend and Next.js for the fr
 
 You can now visit localhost:3000 in your web browser to view the application.
 
-### Security
+## Security
 This project implements security measures for handling sensitive data such as user passwords, credit card information, and user accounts. Encryption is employed to protect this data. However credit card card verification and limitation is beyond the scope of this project.
