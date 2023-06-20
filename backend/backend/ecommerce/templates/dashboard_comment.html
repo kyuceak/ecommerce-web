@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard for Comments</title>
+  </head>
+  <body>
+    <h1>Comments Table</h1>
+
+    <br>
+    <div class="card card-body">
+        <table class="table table-sm">
+            <tr>
+                
+                <th>From User</th>
+                <th>To Product</th>
+                <th>Comment</th>
+                <th>Rating</th>
+                <th>Date</th>
+            </tr>
+
+            {% for comment in comments %}
+            <tr>
+                <td>{{comment.from_user}}</td>
+                <td>{{comment.to_product}}</td>
+                <td>{{comment.comment}}</td>
+                <td>{{comment.rating}}</td>
+                <td>{{comment.created_date}}</td>
+                <td><a class="btn btn-sm btn info" href="{% url 'update_comment' comment.id %}">Update</a></td>
+                <td><a class="btn btn-sm btn info" href="{% url 'delete_comment' comment.id %}">Delete</a></td>
+            </tr>
+            {% endfor %}
+          </table>
+    </div>
+    <div>
+      <br>
+      <br>
+      <a href="http://127.0.0.1:8000/create_comment/">Click Here to Create Comment</a>
+    </div>
+  </body>
+</html>

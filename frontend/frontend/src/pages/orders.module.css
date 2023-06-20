@@ -1,0 +1,102 @@
+.cardContainer {
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.cardHeader {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.cardSubtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 10px;
+}
+
+.cardBody {
+  padding: 15px;
+}
+
+.listGroup {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listGroupItem {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
+  justify-content: space-between;
+}
+
+.listGroupItem:last-child {
+  border-bottom: none;
+}
+
+.image {
+  height: 150px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.name {
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.product {
+  display: block;
+}
+.quantity {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.status {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.totalPrice {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.statusWrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.notFirstCard {
+  margin: 20px 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* This line is to make sure the text aligns left */
+}
+
+.name,
+.product {
+  display: block;
+}

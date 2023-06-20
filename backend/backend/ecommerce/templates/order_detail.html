@@ -1,0 +1,61 @@
+
+
+{% block content %}
+  <h1>Order Detail</h1>
+  <table>
+    <tr>
+      <th>Order ID:</th>
+      <td>{{ order.Oid }}</td>
+    </tr>
+    <tr>
+      <th>Created At:</th>
+      <td>{{ order.createdAt }}</td>
+    </tr>
+    <tr>
+      <th>User:</th>
+      <td>{{ order.user.username }}</td>
+    </tr>
+    <tr>
+      <th>Payment Method:</th>
+      <td>{{ order.paymentMethod }}</td>
+    </tr>
+    <tr>
+      <th>Card No:</th>
+      <td>{{ order.card_no }}</td>
+    </tr>
+    <tr>
+      <th>Card CVK:</th>
+      <td>{{ order.card_cvk }}</td>
+    </tr>
+    <tr>
+      <th>Total Price:</th>
+      <td>{{ order.totalPrice }}</td>
+    </tr>
+  </table>
+  
+  <h2>Order Items:</h2>
+  {% if order.order_items.count > 0 %}
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in order.order_items.all %}
+          <tr>
+            <td>{{ item.OIid }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.qty }}</td>
+            <td>{{ item.price }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No items found.</p>
+  {% endif %}
+{% endblock %}

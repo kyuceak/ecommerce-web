@@ -1,0 +1,14 @@
+.equalHeight {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.equalHeight .card-body {
+  flex-grow: 1;
+}
+/* CSS */
+.custom-five-col {
+  flex: 0 0 20%;
+  max-width: 20%;
+}

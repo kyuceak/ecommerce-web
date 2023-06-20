@@ -1,0 +1,18 @@
+.login-form{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.banner{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.password-toggle {
+  width: 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}

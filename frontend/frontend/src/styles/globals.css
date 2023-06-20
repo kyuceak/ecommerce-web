@@ -1,0 +1,152 @@
+:root {
+  background-color: aliceblue;
+}
+
+.transparent-background {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h4 {
+  color: #fff;
+}
+
+.carousel img {
+  display:block;
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+.break-words {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+/* .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+.itemImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.itemInfo {
+  flex-grow: 1;
+}
+
+.removeItem {
+  display: flex;
+  align-items: center;
+}
+
+.removeItemButton {
+  width: 150px;
+  margin-left: 0.5rem;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.removeItemButton:hover {
+  background-color: #d32f2f;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.continueShoppingButton,
+.proceedPaymentButton {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.continueShoppingButton:hover,
+.proceedPaymentButton:hover {
+  background-color: #303f9f;
+}
+
+.form-control {
+  width: 100px;
+  margin-right: 0.5rem;
+} */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 85px;
+  right: 0px;
+
+  padding: 5px;
+  background: red;
+  color: white;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+
+
+{% block content %}
+  <h2>Order Success</h2>
+  <p>{{ success_msg }}</p>
+  <p>Order ID: {{ order.pk }}</p>
+  <p>Customer: {{ order.CustomUser.username }}</p>
+  <p>Order Items:</p>
+  <ul>
+    {% for item in order.order_items.all %}
+      <li>{{ item.qty }} x {{ item.name }} - ${{ item.price }}</li>
+    {% endfor %}
+  </ul>
+  <p>Total Price: ${{ order.totalPrice }}</p>
+  <a href="{% url 'orders' %}" class="btn btn-primary">Go to Orders Page</a>
+
+{% endblock %}
