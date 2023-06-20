@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User List</title>
+  </head>
+  <body>
+    <h1>User List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Address</th>
+          <th>Cart</th>
+          <th>Order</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in CustomUser %}
+        <tr>
+          <td>{{ user.name }}</td>
+          <td>{{ user.surname }}</td>
+          <td>{{ user.address }}</td>
+          <td>{{ user.cart }}</td>
+          <td>{{ user.order }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+            <!-- <a href="{% url 'update_user' user.pk %}">Edit</a>
+            <form action="{% url 'delete_user' user.pk %}" method="POST">
+              {% csrf_token %}
+              <input type="submit" value="Delete" />
+            </form> -->
+          </td>
+        </tr>
+        {% empty %}
+        <tr>
+          <td colspan="7">No users found.</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="{% url 'create_user' %}" class="btn btn-danger">Create User</a>
+  </body>
+</html>
